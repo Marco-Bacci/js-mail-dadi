@@ -1,18 +1,24 @@
 // -------------MAIL---------------
 // // dichiaro array di lista di mails e const prompt mail cliente
-const mail = [`marco@gmail.com` , `lily@icloud.com`,`chiara@hotmail.it` , `alex@gmail.com` , `jesus@paradise.com` , `Thomas@icloud.com` ]
+const mail = [`marco@gmail.com` , `lily@icloud.com`,`chiara@hotmail.it` , `alex@gmail.com` , `jesus@paradise.com` , `Thomas@icloud.com`]
 const userMail = (prompt(`scrivi la tua email`))
-let message
+// let message = `NON sei in lista`
+let emailFound = false;
 
 //  inizializzo ciclo for dove userMail deve essere contenuto in Mail
 for(let i=0; i<mail.length; i++){
-  if (userMail !== mail[i]){
-    message = `NON sei in lista`;
-  }
-  else{
-    message = `la tua mail è nella lista e puoi accedere alla festa!`}
+  if (userMail === mail[i]){
+    // message = `la tua mail è nella lista e puoi accedere alla festa!`;
+    emailFound = true;
+  } 
 }
-console.log(message)
+
+if(emailFound) {
+  console.log('SEI INVITATO')
+} else {
+  console.log('NON INVITATO')
+}
+
 
 // ------------DADI-------------
 
