@@ -20,8 +20,15 @@ const playerNum = prompt(`scrivi un numero da 1 a 6`)
 let result
 // comparo il numero del pc con quello del player
 if( playerNum > pcNum){
-  
+  result = `${playerNum} è maggiore di ${pcNum} e quindi hai VINTO!`
 }
+else if(playerNum < pcNum){
+  result = `${playerNum} è minore di ${pcNum} e quindi hai PERSO`
+}
+else{
+  result = `${playerNum} è uguale a ${pcNum} e quindi hai PAREGGIATO`
+}
+console.log(result)
 
 
 
