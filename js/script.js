@@ -15,9 +15,9 @@
 // ------------DADI-------------
 
 // dichiaro const numero random per pc e per giocatore
-const pcNum = Math.floor(Math.random(6)+1)
+const pcNum = Math.floor((Math.random()*6 +1))
 const playerNum = prompt(`scrivi un numero da 1 a 6`)
-
+console.log(pcNum)
 
 
 
