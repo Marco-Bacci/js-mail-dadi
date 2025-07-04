@@ -6,12 +6,13 @@ let message
 
 //  inizializzo ciclo for dove userMail deve essere contenuto in Mail
 for(let i=0; i<mail.length; i++){
-  if (userMail === mail[i]){
-    message = `la tua mail è nella lista e puoi accedere alla festa!`;
+  if (userMail !== mail[i]){
+    message = `NON sei in lista`;
   }
-  else
-    message = `Non sei in lista`
+  else{
+    message = `la tua mail è nella lista e puoi accedere alla festa!`}
 }
+console.log(message)
 
 // ------------DADI-------------
 
